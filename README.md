@@ -1,4 +1,4 @@
-# pokemon-get-adventure
+# ポケモンSPAのお手本
 
 ![](./readme_img/logo01.png)
 
@@ -11,8 +11,8 @@
 - [Qiita記事](https://qiita.com/azukiazusa/items/40abd9491e273e85ded4)
 
 ## インストール手順
-[](./github/installation.md)
+[インストール手順](./github/installation.md)
 
 
 ## チーム内のタスク分け
-[](./github/tasks.md)
+[チーム内のタスク分け](./github/tasks.md)
