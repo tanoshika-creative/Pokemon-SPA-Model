@@ -16,3 +16,15 @@
 
 ## チーム内のタスク分け
 [チーム内のタスク分け](./github/tasks.md)
+
+
+
+## [入門書] JSPrimer
+
+[JSPrimer](https://jsprimer.net/)
+
+## [チュートリアル] Vue.jsコンポーネント入門
+
+[Vue.jsコンポーネント入門](https://www.hypertextcandy.com/vuejs-components-introduction-environment-setting)
+
+
