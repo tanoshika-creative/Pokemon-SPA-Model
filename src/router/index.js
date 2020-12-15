@@ -1,57 +1,57 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Adventure from '@/views/Adventure.vue'
-import Top from '@/views/Top.vue'
-import Pokedex from '@/views/Pokedex.vue'
-import RecentryGet from '@/views/RecentryGet.vue'
-import Field from '@/views/Field.vue'
-import Buttle from '@/views/Buttle.vue'
-import Trophy from '@/views/Trophy.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Adventure from "@/views/Adventure.vue";
+import Top from "@/views/Top.vue";
+import Pokedex from "@/views/Pokedex.vue";
+import RecentryGet from "@/views/RecentryGet.vue";
+import Field from "@/views/Field.vue";
+import Buttle from "@/views/Buttle.vue";
+import Trophy from "@/views/Trophy.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'top',
-    component: Top
+    path: "/",
+    name: "top",
+    component: Top,
   },
   {
-    path: '/adventure',
-    name: 'adventure',
-    component: Adventure
+    path: "/adventure",
+    name: "adventure",
+    component: Adventure,
   },
   {
-    path: '/pokedex',
-    name: 'pokedex',
-    component: Pokedex
+    path: "/pokedex",
+    name: "pokedex",
+    component: Pokedex,
   },
   {
-    path: '/recentry-get',
-    name: 'RecentryGet',
-    component: RecentryGet
+    path: "/recentry-get",
+    name: "RecentryGet",
+    component: RecentryGet,
   },
   {
-    path: '/field/:name',
-    name: 'field',
-    component: Field
+    path: "/field/:name",
+    name: "field",
+    component: Field,
   },
   {
-    path: '/buttle/:name',
-    name: 'buttle',
-    component: Buttle
+    path: "/buttle/:name",
+    name: "buttle",
+    component: Buttle,
   },
   {
-    path: '/trophy',
-    name: 'trophy',
-    component: Trophy
-  }
-]
+    path: "/trophy",
+    name: "trophy",
+    component: Trophy,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
