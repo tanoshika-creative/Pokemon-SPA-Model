@@ -31,6 +31,10 @@
   </div>
 </template>
 <style scoped>
+#select-field {
+  /* background: skyblue; */
+  background-image: url("~@/assets/fields/background/wall_select.png");
+}
 img {
   border-radius: 50%;
   background: #333;
