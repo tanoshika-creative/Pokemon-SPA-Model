@@ -5,8 +5,8 @@
       v-if="pokemons"
       v-bind:pokemons="pokemons"
     ></encount-pokemon>
-    <button @click="reload">もっとさがしてみる</button>
-    <router-link to="/adventure">ちがうばしょをさがしてみる</router-link>
+    <button class="find-more-btn" @click="reload">もっとさがしてみる</button>
+    <router-link class="button-style" to="/adventure">ちがうばしょをさがしてみる</router-link>
   </div>
 </template>
 
@@ -45,5 +45,73 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+.find-more-btn {
+  /* 文字サイズを1.4emに指定 */
+  font-size: 1.4em;
+
+  /* 文字の太さをboldに指定 */
+  font-weight: bold;
+
+  /* 縦方向に10px、
+    * 横方向に30pxの余白を指定 */
+  padding: 10px 30px;
+
+  /* 文字色を白色に指定 */
+  color: #fff;
+
+  /* ボーダーをなくす */
+  border-style: none;
+
+  /* ボタンの影の指定
+    * 影の横幅を2px
+    * 縦長を2px
+    * ぼかしを3px
+    * 広がりを1px
+    * 色を#666（グレー）に指定 */
+  box-shadow: 2px 2px 3px 1px #666;
+  -moz-box-shadow: 2px 2px 3px 1px #666;
+  -webkit-box-shadow: 2px 2px 3px 1px #666;
+
+  /* テキストの影の指定
+    * 影の横幅を1px
+    * 縦長を1px
+    * ぼかしを2px
+    * 色を#000（黒）に指定 */
+  text-shadow: 1px 1px 2px #000;
+
+  /* グラデーションの指定 */
+  background: -moz-linear-gradient(bottom, #36d, #248 50%, #36d);
+  background: -webkit-gradient(linear, left bottom, left top, from(#36d), color-stop(0.5, #248), to(#36d));
+
+  /* 角丸の指定 */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+  /* 透明度を40%に指定 */
+  opacity: 0.6;
+}
+
+.find-more-btn:hover {
+  /* 透明度を10%に指定 */
+  opacity: 0.9;
+}
+
+/*  */
+
+.button-style {
+  font-size: 18px;
+  display: inline-block;
+  /* padding: 0.4em 1em 0.2em; */
+  padding: 0.6em 1.2em 0.4em;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  border: #ffffff dashed 1px;
+  box-shadow: 0 0 0 0.2em rgb(17, 56, 148);
+  border-radius: 2.5px;
+  background-color: rgb(17, 56, 148);
+  cursor: pointer;
 }
 </style>
