@@ -3,24 +3,24 @@
     <div class="modal modal-overlay" @click.self="$emit('close')">
       <div class="modal-window">
         <div class="modal-content">
-          <div class='flex'>
+          <div class="flex">
             <div class="b">
               <div>
                 {{ pokemon.id }}. {{ pokemon.name }}
-                <font-awesome-icon 
-                  icon="heart" 
-                  v-bind:class="{ like: like, dislike: !like }" 
-                  @click="toggleLike" 
+                <font-awesome-icon
+                  icon="heart"
+                  v-bind:class="{ like: like, dislike: !like }"
+                  @click="toggleLike"
                 />
-                <font-awesome-icon 
-                  icon="star" 
-                  v-bind:class="{ shiny: shiny, dislike: !shiny }" 
-                  @click="toggleShiny" 
+                <font-awesome-icon
+                  icon="star"
+                  v-bind:class="{ shiny: shiny, dislike: !shiny }"
+                  @click="toggleShiny"
                   v-if="$store.getters.isGetedShiny(englishName)"
                 />
               </div>
-                <img v-bind:src="getSprites"/>
-              </div>
+              <img v-bind:src="getSprites" />
+            </div>
             <div class="c">
               <div>{{ pokemon.type }}</div>
               <div>{{ pokemon.genera }}</div>
@@ -29,7 +29,10 @@
             </div>
             <div class="d">
               <div>せいそくち: {{ $store.state.HABITAT[pokemon.habitat] }}</div>
-              <div>つかまえたかず: {{ $store.getters.getCountByName(pokemon.englishName) }}</div>
+              <div>
+                つかまえたかず:
+                {{ $store.getters.getCountByName(pokemon.englishName) }}
+              </div>
             </div>
           </div>
           <div class="flavor_text">
@@ -39,38 +42,38 @@
             <a class="close" @click.self="$emit('close')">閉じる</a>
           </div>
         </div>
-     </div>
+      </div>
     </div>
   </transition>
 </template>
 
 <script>
-import mixin from '@/mixin'
+import mixin from "@/mixin";
 export default {
   props: {
     pokemon: Object,
   },
 
-  data: function() {
+  data: function () {
     return {
       like: this.$store.getters.isLike(this.pokemon.id),
       englishName: this.pokemon.englishName,
-      shiny: false
-    }
+      shiny: false,
+    };
   },
 
   mixins: [mixin],
 
   methods: {
-    toggleLike: function() {
-      this.$store.commit('toggleLike', this.pokemon.id)
-      this.like = !this.like
+    toggleLike: function () {
+      this.$store.commit("toggleLike", this.pokemon.id);
+      this.like = !this.like;
     },
-    toggleShiny: function() {
-      this.shiny = !this.shiny
+    toggleShiny: function () {
+      this.shiny = !this.shiny;
     },
   },
-}
+};
 </script>
 
 <style lang="stylus">
@@ -212,5 +215,4 @@ export default {
 .shiny {
   color: #1199FF
 }
-
 </style>

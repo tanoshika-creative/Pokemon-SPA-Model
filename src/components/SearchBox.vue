@@ -1,16 +1,18 @@
 <template>
   <div id="search-box">
     <h3>Search</h3>
-    <a id="close" @click="$emit('close')"><img :src="require(`@/assets/icon/close.png`)" width="20" height="20" /></a>
+    <a id="close" @click="$emit('close')"
+      ><img :src="require(`@/assets/icon/close.png`)" width="20" height="20"
+    /></a>
     <div id="elements">
       <ul>
         <li>
           <label for="isRegisted">登録済み</label>
-          <input type="checkbox" id="isRegisted" v-model="checkIsRegisted">
+          <input type="checkbox" id="isRegisted" v-model="checkIsRegisted" />
         </li>
         <li>
           <label for="word">なまえ：</label>
-          <input type="text" id="word" v-model="inputWord">
+          <input type="text" id="word" v-model="inputWord" />
         </li>
         <li>
           <label for="area">地方：</label>
@@ -21,7 +23,7 @@
             <option value="hohen">ホウエン</option>
             <option value="sinnoh">シンオウ</option>
           </select>
-          </li>
+        </li>
         <li>
           <label for="type">タイプ：</label>
           <select id="type" v-model="selectType">
@@ -85,73 +87,73 @@ export default {
   computed: {
     checkIsRegisted: {
       get() {
-        return this.isRegisted
+        return this.isRegisted;
       },
       set(isRegisted) {
-        this.$emit('update:isRegisted', isRegisted)
-      }
+        this.$emit("update:isRegisted", isRegisted);
+      },
     },
     inputWord: {
       get() {
-        return this.word
+        return this.word;
       },
       set(word) {
-        this.$emit('update:word', word)
-      }
+        this.$emit("update:word", word);
+      },
     },
     selectArea: {
       get() {
-        return this.area
+        return this.area;
       },
       set(area) {
-        this.$emit('update:area', area)
-      }
+        this.$emit("update:area", area);
+      },
     },
     selectLocal: {
       get() {
-        return this.local
+        return this.local;
       },
       set(local) {
-        this.$emit('update:local', local)
-      }
+        this.$emit("update:local", local);
+      },
     },
     selectType: {
       get() {
-        return this.type
+        return this.type;
       },
       set(type) {
-        this.$emit('update:type', type)
-      }
+        this.$emit("update:type", type);
+      },
     },
     selectHabitat: {
       get() {
-        return this.habitat
+        return this.habitat;
       },
       set(habitat) {
-        this.$emit('update:habitat', habitat)
-      }
+        this.$emit("update:habitat", habitat);
+      },
     },
     selectSort: {
       get() {
-        return this.sort
+        return this.sort;
       },
       set(sort) {
-        this.$emit('update:sort', sort)
-      }
+        this.$emit("update:sort", sort);
+      },
     },
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-#search-box{
+#search-box {
   position: fixed;
   background: #0e8fa1;
   color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
   min-width: 270px;
   min-height: 270px;
   border-radius: 10px;
@@ -164,13 +166,12 @@ export default {
   right: 5%;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  padding: 5px
+  padding: 5px;
 }
-
 </style>
