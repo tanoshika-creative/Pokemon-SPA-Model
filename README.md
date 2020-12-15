@@ -33,3 +33,9 @@
 - 12系
   - (Maltese) v12.4.0  
   - (Kamo)
+
+## Prettierの導入
+
+~~~sh
+npm run prettier-write
+~~~
