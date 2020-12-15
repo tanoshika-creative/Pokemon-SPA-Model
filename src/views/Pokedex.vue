@@ -84,7 +84,8 @@ export default {
 
 <style scoped>
 h2{
-  color: #FFF
+  color: #FFF;
+  padding: 1.5rem 0 0 0;
 }
 #pokedex{
   padding:0;
@@ -92,7 +93,8 @@ h2{
   height: 100vh;
   overflow-y: scroll;
   clear:both;
-  background: #F35F57;
+  /* background: #F35F57; */
+  background: #222584;
 }
 
 #pokedex ul{
