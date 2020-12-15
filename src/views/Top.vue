@@ -10,9 +10,13 @@
     <div><img :src="require(`@/assets/howTo/encount.png`)" /></div>
     <h3>ボールをなげてつかまえましょう！</h3>
     <div><img :src="require(`@/assets/howTo/get.png`)" /></div>
-    <h1><router-link to="/adventure">いますぐポケモンをさがしにいく</router-link></h1>
+    <h1>
+      <router-link to="/adventure">いますぐポケモンをさがしにいく</router-link>
+    </h1>
     <h1>ずかんのかんせいをめざそう！</h1>
     <div><img :src="require(`@/assets/howTo/pokedex.png`)" /></div>
-    <footer><a href="https://github.com/azukiazusa1/Pokomeon-get-Adventure">GitHub</a></footer>
+    <footer>
+      <a href="https://github.com/azukiazusa1/Pokomeon-get-Adventure">GitHub</a>
+    </footer>
   </div>
 </template>
