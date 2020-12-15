@@ -1,6 +1,6 @@
 <template>
   <div id="encount-pokemon" :style="{ backgroundImage: `url(${img})` }">
-    <h2>{{ $store.state.HABITAT[this.name] }}</h2>
+    <h2 class="place">{{ $store.state.HABITAT[this.name] }}</h2>
     <encount-pokemon
       v-if="pokemons"
       v-bind:pokemons="pokemons"
@@ -113,5 +113,10 @@ export default {
   border-radius: 2.5px;
   background-color: rgb(17, 56, 148);
   cursor: pointer;
+}
+
+.place {
+  background-color: rgba(235, 235, 235, .45);
+  padding: 1rem 1rem;
 }
 </style>
