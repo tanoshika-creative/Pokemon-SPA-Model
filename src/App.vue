@@ -44,6 +44,8 @@ export default {
 </script>
 
 <style scoped>
+
+/* スマホ幅 */
 @media screen and (max-width: 480px) {
   #pc {
     display: none;
@@ -55,7 +57,7 @@ export default {
 
   li {
     padding: 5px;
-    white-space: nowrap
+    white-space: nowrap;
   }
 
   nav a {
@@ -69,6 +71,7 @@ export default {
   }
 }
 
+/* PC幅 */
 @media screen and (min-width: 480px) {
   #smart-phone {
     display: none;
@@ -88,6 +91,7 @@ export default {
   nav a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
   }
 
   nav a.router-link-exact-active {
