@@ -10,12 +10,20 @@
 
 - [Qiita記事](https://qiita.com/azukiazusa/items/40abd9491e273e85ded4)
 
-## インストール手順
+## (1) インストール手順
 [インストール手順](./github/installation.md)
 
 
-## チーム内のタスク分け
+## (2) チーム内のタスク分け
 [チーム内のタスク分け](./github/tasks.md)
+
+## (3) 新しいブランチを切る手順
+[新しいブランチを切る手順](./github/new_branch.md)
+
+
+## (4) プルリクを出す前に行うこと
+[プルリクを出す前に行うこと](./github/before_pr.md)
+
 
 
 
