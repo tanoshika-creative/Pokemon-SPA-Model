@@ -28,3 +28,8 @@
 [Vue.jsコンポーネント入門](https://www.hypertextcandy.com/vuejs-components-introduction-environment-setting)
 
 
+## Node.jsバージョン
+
+- 12系
+  - (Maltese) v12.4.0  
+  - (Kamo)

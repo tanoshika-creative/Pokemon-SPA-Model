@@ -47,12 +47,17 @@ ul{
   text-decoration: none;
   flex-wrap: wrap;
 }
+
+/* li {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
 @media screen and (max-width: 480px) {
   li{
     display: inline;
     width:90%;
     height:32%;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
+    background-color: rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
     margin-right:0.5%;
     margin-top:5px;
@@ -64,7 +69,8 @@ ul{
     display: inline;
     width:32%;
     min-height: 260px;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
+    background-color: rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
     margin-right:0.5%;
     margin-top:5px;
