@@ -22,7 +22,9 @@
     </div>
 
     <h3 class="description">ボールをなげてつかまえましょう！</h3>
-    <div><img :src="require(`@/assets/howTo/get.png`)" /></div>
+    <div>
+      <img class="description-screen-1" :src="require(`@/assets/howTo/get.png`)" />
+    </div>
     
     <h1>
       <router-link class="getASAP" to="/adventure">いますぐポケモンをさがしにいく</router-link>
@@ -53,13 +55,17 @@
     margin: 0.4rem 0;
   }
 
-  .description {
+  .description-1 {
     padding: 5rem 0 0 0;
+  }
+  .description {
+    padding: 10rem 0 0 0;
   }
 
   .description-screen-1 {
     width: 75%;
     height: auto;
+    margin: 0 0 10rem 0;
   }
 
   .getASAP {
