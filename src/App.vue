@@ -90,7 +90,8 @@ export default {
 
   nav a {
     font-weight: bold;
-    color: #2c3e50;
+    /* color: #2c3e50; */
+    color: #FFF;
     text-decoration: none;
   }
 
@@ -116,13 +117,20 @@ header {
   padding: 0;
   width: 100%;
   height: 70px;
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
+  background: #0c0c0c;
+  color: #FFF;
   z-index: 100
 }
+
+/* body {
+  background: #0c0c0c;
+} */
 
 #content {
   /* padding-top: 70px */
   padding-top: 43px;
+  margin: 32px 0 0 0;
 
   /* height: 1000px; */
 }
