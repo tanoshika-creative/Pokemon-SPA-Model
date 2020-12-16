@@ -30,8 +30,8 @@
             :src="require(`@/assets/icon/ball.png`)"
           />
         </transition>
-        <button @click="throwBall" v-if="show">ボールをなげる</button>
-        <button @click="$router.go(-1)" v-if="show">にげる</button>
+        <button class="throw-bowl" @click="throwBall" v-if="show">ボールをなげる</button>
+        <button class="run-away" @click="$router.go(-1)" v-if="show">にげる</button>
       </div>
       <div id="box-right"></div>
     </div>
@@ -262,6 +262,7 @@ export default {
 
 #anime-area {
   display: flex;
+  background-color: #ccf6c8;
 }
 
 #pokemon,
@@ -295,4 +296,25 @@ export default {
   transform: translateY(-10px);
   opacity: 0;
 }
+
+.throw-bowl, .run-away {
+  display       : inline-block;
+  border-radius : 48%;          /* 角丸       */
+  font-size     : 24pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 24px 48px;   /* 余白       */
+  background    : #0d7377;     /* 背景色     */
+  color         : #eeeeee;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 4px 4px 34px #666666;  /* 影の設定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.8;         /* カーソル時透明度 */
+}
+
+
 </style>
