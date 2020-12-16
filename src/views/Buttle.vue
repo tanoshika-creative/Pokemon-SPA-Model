@@ -300,7 +300,8 @@ export default {
 .throw-bowl, .run-away {
   display       : inline-block;
   border-radius : 48%;          /* 角丸       */
-  font-size     : 24pt;        /* 文字サイズ */
+  font-size     : 22px;        /* 文字サイズ */
+  font-weight: bold;
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 24px 48px;   /* 余白       */
@@ -310,8 +311,9 @@ export default {
   opacity       : 1;           /* 透明度     */
   transition    : .3s;         /* なめらか変化 */
   box-shadow    : 4px 4px 34px #666666;  /* 影の設定 */
+  margin: 0 1rem;
 }
-.button:hover {
+.throw-bowl:hover, .run-away:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
   opacity       : 0.8;         /* カーソル時透明度 */
 }
