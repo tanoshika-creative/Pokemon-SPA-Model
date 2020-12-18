@@ -88,7 +88,7 @@ export default {
   }
 
   li {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
 
   nav a {
@@ -96,6 +96,10 @@ export default {
     /* color: #2c3e50; */
     color: #FFF;
     text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #85e985;
   }
 
   nav a.router-link-exact-active {
@@ -134,7 +138,7 @@ header {
 #content {
   /* padding-top: 70px */
   padding-top: 43px;
-  margin: 32px 0 0 0;
+  margin: 26px 0 0 0;
 
   /* height: 1000px; */
 }

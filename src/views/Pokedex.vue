@@ -1,8 +1,9 @@
 <template>
   <div id="pokedex">
-    <h2>
+    <h2>ポケモンずかん</h2>
+    <h3>
       つかまえたかず：{{ registPokedexCount }} / {{ registPokedexCountAll }}
-    </h2>
+    </h3>
     <search-box
       id="search-box"
       v-if="searchBox"
@@ -96,6 +97,10 @@ h2 {
   color: #fff;
   padding: 1.5rem 0 0 0;
 }
+h3 {
+  color: #ddd;
+  padding: 0 0 0 0;
+}
 #pokedex {
   padding: 0;
   width: 100%;
@@ -115,7 +120,8 @@ h2 {
 }
 
 #main {
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  padding-top: 30px;
 }
 
 #next {

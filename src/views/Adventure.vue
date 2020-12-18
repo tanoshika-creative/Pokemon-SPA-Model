@@ -1,6 +1,6 @@
 <template>
   <div id="select-field">
-    <h1 class="title">いきたいばしょをクリック!</h1>
+    <h1 class="title">フィールドをクリックしよう!</h1>
     <ul>
       <li>
         <router-link to="/field/forest">
@@ -59,7 +59,8 @@
 }
 img {
   border-radius: 50%;
-  background: #333;
+  /* background: #333; */
+  padding: 1.4em 0 0 0;
 }
 
 ul {
@@ -109,6 +110,8 @@ ul {
   }
   .title{
     margin-top: 0;
+    padding: 1.6rem 1rem 1rem;
+    color: #fff;
   }
 }
 </style>

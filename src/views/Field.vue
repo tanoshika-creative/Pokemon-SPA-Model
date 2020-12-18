@@ -118,5 +118,6 @@ export default {
 .place {
   background-color: rgba(235, 235, 235, .45);
   padding: 1rem 1rem;
+  margin-top: 0;
 }
 </style>
