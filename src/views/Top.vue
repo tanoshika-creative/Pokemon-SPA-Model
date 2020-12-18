@@ -36,7 +36,7 @@
     </div>
    
     <footer>
-      <a href="https://github.com/tanoshika-creative/Pokemon-SPA-Model">GitHub</a>
+      ポケモンゲットだぜ！
     </footer>
   </div>
 </template>
