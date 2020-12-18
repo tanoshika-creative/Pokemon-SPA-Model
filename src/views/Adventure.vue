@@ -1,6 +1,6 @@
 <template>
   <div id="select-field">
-    <h1>いきたいばしょをクリック!</h1>
+    <h1 class="title">いきたいばしょをクリック!</h1>
     <ul>
       <li>
         <router-link to="/field/forest">
@@ -54,6 +54,8 @@
 #select-field {
   /* background: skyblue; */
   background-image: url("~@/assets/fields/background/wall_select.png");
+  padding: 0;
+  margin: 0;
 }
 img {
   border-radius: 50%;
@@ -100,9 +102,13 @@ ul {
     margin-right: 0.2%;
   }
   img:hover {
-    transition-duration: 0.3s;
-    transform: scale(1.5);
-    transition-duration: 0.3s;
+    /* transform: scale(1.5); */
+    transform: scale(1.2);
+    /* transition-duration: 0.3s; */
+    transition-duration: 0.8s;
+  }
+  .title{
+    margin-top: 0;
   }
 }
 </style>
