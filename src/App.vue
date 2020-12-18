@@ -35,10 +35,13 @@
 
 <script>
 import { Slide } from 'vue-burger-menu'
+// https://qiita.com/hogesuke_1/items/b12c65e8485289da4146
+import 'normalize.css'
 
 export default {
+  name: 'App',
   components: {
-    Slide
+    Slide,
   }
 }
 </script>
@@ -107,6 +110,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
 }
 
 header {
