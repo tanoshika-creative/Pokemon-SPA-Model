@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <div class="main-container">
     <h2>さいきんつかまえたポケモン</h2>
     <div id="count">きょう：{{ todayCount }}</div>
     <div id="toDaycount">ごうけい：{{ count }}</div>
-    <ul v-for="(pokemon, index) in limitedRecentryGet" :key="index">
-      <get-pokemon-list :pokemon="pokemon"></get-pokemon-list>
-    </ul>
+    <div class="mini-container">
+      <ul v-for="(pokemon, index) in limitedRecentryGet" :key="index">
+        <get-pokemon-list :pokemon="pokemon"></get-pokemon-list>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -72,5 +74,30 @@ ul {
   display: flex;
   justify-content: center;
   padding: 0;
+}
+.main-container {
+  background-color: seagreen;
+}
+h2 {
+  margin-top: 0;
+  padding: 1rem;
+  color: #FFF;
+}
+#count, #toDaycount {
+  color: #FFF;
+}
+.mini-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-content:space-around; */
+  padding: 1rem 0 0 0;
+}
+ul {
+  min-width: 10rem;
+  min-width: 20rem;
+}
+.mini-container ul li {
+  min-width: 20rem;
 }
 </style>
